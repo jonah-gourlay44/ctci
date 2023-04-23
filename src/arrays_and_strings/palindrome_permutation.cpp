@@ -1,4 +1,4 @@
-#include "arrays_and_strings.h"
+#include "arrays_and_strings/arrays_and_strings.h"
 #include <vector>
 
 // Approach 1: Use characters as index in boolean vector, values indicate if the char appears an odd number of times.

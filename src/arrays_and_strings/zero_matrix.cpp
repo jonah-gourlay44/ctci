@@ -1,4 +1,4 @@
-#include "arrays_and_strings.h"
+#include "arrays_and_strings/arrays_and_strings.h"
 #include <unordered_set>
 
 void zeroMatrix(uint32_t** mat, size_t M, size_t N)

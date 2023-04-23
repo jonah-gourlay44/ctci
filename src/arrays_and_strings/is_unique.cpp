@@ -1,6 +1,6 @@
 #include <string>
 #include "utils/quick_sort.h"
-#include "arrays_and_strings.h"
+#include "arrays_and_strings/arrays_and_strings.h"
 #include <iostream>
 
 bool isUnique_standard(const std::string& str)

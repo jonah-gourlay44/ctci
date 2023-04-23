@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "arrays_and_strings.h"
+#include "arrays_and_strings/arrays_and_strings.h"
 
 TEST(ArraysAndStrings, is_unique)
 {

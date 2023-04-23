@@ -1,4 +1,4 @@
-#include "arrays_and_strings.h"
+#include "arrays_and_strings/arrays_and_strings.h"
 
 bool checkPermutation(const std::string& str1, const std::string& str2)
 {

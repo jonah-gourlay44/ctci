@@ -1,5 +1,5 @@
-#include <utils/linked_list.h>
-#include <linked_lists.h>
+#include <linked_lists/linked_list.h>
+#include <linked_lists/linked_lists.h>
 
 void partition(LinkedList<int>& list, int x)
 {

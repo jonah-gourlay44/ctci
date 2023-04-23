@@ -1,4 +1,4 @@
-#include "arrays_and_strings.h"
+#include "arrays_and_strings/arrays_and_strings.h"
 
 void rotateMatrix(uint32_t** mat, size_t N)
 {

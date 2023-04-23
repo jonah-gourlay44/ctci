@@ -28,6 +28,7 @@ add_library(${PROJECT_NAME}
     src/linked_lists/loop_detection.cpp
 
     # Stacks & Queues
+    src/stacks_and_queues/set_of_stacks.cpp
 )
 
 include_directories(
