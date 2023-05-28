@@ -29,6 +29,8 @@ add_library(${PROJECT_NAME}
 
     # Stacks & Queues
     src/stacks_and_queues/set_of_stacks.cpp
+    src/stacks_and_queues/my_queue.cpp
+    src/stacks_and_queues/sort.cpp
 )
 
 include_directories(
