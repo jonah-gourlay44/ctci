@@ -80,5 +80,9 @@ TEST(StacksAndQueues, test_sort_stack)
 
     sort(my_stack);
 
-    ASSERT_EQ(my_stack.top(), 3);
+    std::vector<int> order { 3, 4, 4, 6, 7, 8};
+    for (const auto& num : order) {
+        ASSERT_EQ(my_stack.top(), num);
+        my_stack.pop();
+    }
 }

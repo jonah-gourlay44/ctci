@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "g++ - Build and debug active file",
+            "name": "Run Tests",
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/build/ctci_test",

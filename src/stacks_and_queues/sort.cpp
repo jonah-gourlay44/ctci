@@ -12,7 +12,7 @@ void sort(std::stack<int>& stack)
             peripheral.push(next);
         } else {
             int i = 0;
-            while (peripheral.top() > next) {
+            while (!peripheral.empty() && peripheral.top() > next) {
                 stack.push(peripheral.top());
                 peripheral.pop();
                 i++;
