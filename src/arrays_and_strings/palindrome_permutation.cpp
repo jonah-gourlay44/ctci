@@ -1,6 +1,9 @@
 #include "arrays_and_strings/arrays_and_strings.h"
 #include <vector>
 
+namespace arrays_and_strings
+{
+
 // Approach 1: Use characters as index in boolean vector, values indicate if the char appears an odd number of times.
 // If more than one char has an odd count, the string is not a palindrome permutation.
 
@@ -46,3 +49,5 @@ bool palindromePermutation(const std::string& str)
 
     return arr == 0 || (arr & (arr - 1)) == 0;
 }
+
+} // namespace arrays_and_strings

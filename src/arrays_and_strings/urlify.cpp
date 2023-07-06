@@ -2,6 +2,9 @@
 
 #include <queue>
 
+namespace arrays_and_strings
+{
+
 // O(n) memory requirement using queue buffer
 // O(n) runtime
 // n is length of the string including extra characters
@@ -85,3 +88,5 @@ void URLify(char* str, int length)
         }
     }
 }
+
+} // namespace arrays_and_strings

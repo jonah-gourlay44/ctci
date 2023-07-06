@@ -1,5 +1,8 @@
 #include <stacks_and_queues/my_queue.h>
 
+namespace stacks_and_queues
+{
+
 void MyQueue::add(int item)
 {
     push_stack.push(item);
@@ -26,3 +29,5 @@ bool MyQueue::isEmpty()
 {
     return pop_stack.empty() && push_stack.empty();
 }
+
+} // namespace stacks_and_queues

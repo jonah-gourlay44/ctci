@@ -2,6 +2,9 @@
 
 #include <string>
 
+namespace arrays_and_strings
+{
+
 /**
  * @brief An algorithm to determine if a string has all unique characters
  * @param str The input string
@@ -72,3 +75,5 @@ void zeroMatrix(uint32_t** mat, size_t M, size_t N);
  * @return true If s2 is a rotation of s1
  */
 bool stringRotation(const std::string& s1, const std::string& s2);
+
+} // namespace arrays_and_strings

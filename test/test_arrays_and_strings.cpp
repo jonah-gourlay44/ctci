@@ -1,6 +1,8 @@
 #include <gtest/gtest.h>
 #include "arrays_and_strings/arrays_and_strings.h"
 
+using namespace arrays_and_strings;
+
 TEST(ArraysAndStrings, is_unique)
 {
     EXPECT_TRUE(isUnique("wisdom"));

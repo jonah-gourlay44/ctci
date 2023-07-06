@@ -9,7 +9,7 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/build/ctci_test",
-            "args": ["--gtest_filter=StacksAndQueues.*"],
+            "args": ["--gtest_filter=TreesAndGraphs.*"],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],

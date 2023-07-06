@@ -2,6 +2,9 @@
 #include <stdio.h>
 #include <string.h>
 
+namespace arrays_and_strings
+{
+
 /**
  * @brief Function to check if one string is a substring of another
  * @param s1 The string to search in
@@ -30,3 +33,5 @@ bool stringRotation(const std::string& s1, const std::string& s2)
 
     return false;
 }
+
+} // namespace arrays_and_strings

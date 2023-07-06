@@ -2,6 +2,9 @@
 #include <exception>
 #include <cstring>
 
+namespace stacks_and_queues
+{
+
 /**
  * @brief Class representing three stacks
  * @tparam T The datatype contained by each stack
@@ -129,3 +132,5 @@ bool ThreeStack<T>::isEmpty(int index)
 
     return top_indices_[index] < 0;
 }
+
+} // namespace stacks_and_queues

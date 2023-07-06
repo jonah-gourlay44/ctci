@@ -1,6 +1,9 @@
 #include <stacks_and_queues/set_of_stacks.h>
 #include <stdexcept>
 
+namespace stacks_and_queues
+{
+
 SetOfStacks::SetOfStacks(int threshold)
     : threshold_(threshold)
 {}
@@ -64,3 +67,5 @@ void SetOfStacks::popAt(int index)
         set_.erase(set_.begin() + index);
     }
 }
+
+} // namespace stacks_and_queues

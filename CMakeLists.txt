@@ -27,10 +27,14 @@ add_library(${PROJECT_NAME}
     src/linked_lists/intersection.cpp
     src/linked_lists/loop_detection.cpp
 
-    # Stacks & Queues
+    # Stacks and Queues
     src/stacks_and_queues/set_of_stacks.cpp
     src/stacks_and_queues/my_queue.cpp
     src/stacks_and_queues/sort.cpp
+    src/stacks_and_queues/animal_shelter.cpp
+
+    # Trees and Graphs
+    src/trees_and_graphs/route_between_nodes.cpp
 )
 
 include_directories(
@@ -44,6 +48,7 @@ add_executable(${PROJECT_NAME}_test
     test/test_arrays_and_strings.cpp
     test/test_linked_lists.cpp
     test/test_stacks_and_queues.cpp
+    test/test_trees_and_graphs.cpp
 )
 
 target_link_libraries(${PROJECT_NAME}_test

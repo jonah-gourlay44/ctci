@@ -1,5 +1,9 @@
 #include <linked_lists/linked_list.h>
 #include <linked_lists/linked_lists.h>
+#include <math.h>
+
+namespace linked_lists
+{
 
 Node<int>::Ptr intersection(const LinkedList<int>& list1, const LinkedList<int>& list2)
 {
@@ -60,3 +64,5 @@ Node<int>::Ptr intersection(const LinkedList<int>& list1, const LinkedList<int>&
     // list1 length is larger than or equal to list2 length
     return iterate(it1, it2, diff);
 }
+
+} // namespace arrays_and_strings

@@ -2,6 +2,9 @@
 #include <stack>
 #include <vector>
 
+namespace stacks_and_queues
+{
+    
 /**
  * @brief Class to store stacks in a set
  */
@@ -53,3 +56,5 @@ private:
     std::vector<std::stack<int>> set_;
     int threshold_;
 };
+
+} // namespace stacks_and_queues

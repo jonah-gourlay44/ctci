@@ -1,6 +1,9 @@
 #include <linked_lists/linked_list.h>
 #include <linked_lists/linked_lists.h>
 
+namespace linked_lists
+{
+
 LinkedList<int> sumLists(const LinkedList<int>& list1, const LinkedList<int>& list2)
 {
     int remainder = 0;
@@ -76,3 +79,5 @@ LinkedList<int> sumListsForward(const LinkedList<int>& list1, const LinkedList<i
 
     return sum_list;
 }
+
+} // namespace arrays_and_strings

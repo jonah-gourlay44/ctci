@@ -1,6 +1,9 @@
 #include <linked_lists/linked_list.h>
 #include <linked_lists/linked_lists.h>
 
+namespace linked_lists
+{
+
 Node<int>::Ptr loopDetection(const LinkedList<int>& list)
 {
     // If list is empty, return early
@@ -37,3 +40,5 @@ Node<int>::Ptr loopDetection(const LinkedList<int>& list)
     // Both nodes are the same distance from the loop start, so return their collision point
     return it_slow;
 }
+
+} // namespace arrays_and_strings

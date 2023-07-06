@@ -1,5 +1,8 @@
 #pragma once
 
+namespace linked_lists
+{
+
 template <typename T>
 class LinkedList;
 
@@ -73,3 +76,5 @@ typename Node<int>::Ptr intersection(const LinkedList<int>& list1, const LinkedL
  * @return Node<int>::Ptr The node at the beginning of the loop, nullptr if no loop exists
  */
 typename Node<int>::Ptr loopDetection(const LinkedList<int>& list);
+
+} // namespace linked_lists

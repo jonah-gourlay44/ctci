@@ -3,6 +3,8 @@
 #include <gtest/gtest.h>
 #include <iostream>
 
+using namespace linked_lists;
+
 TEST(LinkedLists, linked_list)
 {
     LinkedList<int> list;

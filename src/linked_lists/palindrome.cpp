@@ -2,6 +2,9 @@
 #include <linked_lists/linked_lists.h>
 #include <stdint.h>
 
+namespace linked_lists
+{
+
 bool palindromeHelper(bool odd, int mid, int depth, Node<char>::Ptr& node)
 {
     if (depth == mid) {
@@ -48,3 +51,5 @@ bool palindrome(const LinkedList<char>& list)
 
     return palindromeHelper(odd, mid, depth, node);
 }
+
+} // namespace arrays_and_strings

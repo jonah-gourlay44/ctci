@@ -1,6 +1,9 @@
 #include <linked_lists/linked_list.h>
 #include <linked_lists/linked_lists.h>
 
+namespace linked_lists
+{
+
 void deleteMiddleNode(Node<int>::Ptr& node)
 {
     if (node == nullptr)
@@ -11,3 +14,5 @@ void deleteMiddleNode(Node<int>::Ptr& node)
 
     a.reset();
 }
+
+} // namespace arrays_and_strings

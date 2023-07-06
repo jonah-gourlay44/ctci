@@ -1,6 +1,9 @@
 #include <linked_lists/linked_list.h>
 #include <linked_lists/linked_lists.h>
 
+namespace linked_lists
+{
+
 void partition(LinkedList<int>& list, int x)
 {
     // list is empty
@@ -33,3 +36,5 @@ void partition(LinkedList<int>& list, int x)
         }
     }
 }
+
+} // namespace arrays_and_strings

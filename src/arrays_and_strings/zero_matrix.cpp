@@ -1,6 +1,9 @@
 #include "arrays_and_strings/arrays_and_strings.h"
 #include <unordered_set>
 
+namespace arrays_and_strings
+{
+
 void zeroMatrix(uint32_t** mat, size_t M, size_t N)
 {
     // Place zero rows and cols into hash sets
@@ -54,3 +57,5 @@ void zeroMatrix(uint32_t** mat, size_t M, size_t N)
         }
     }
 }
+
+} // namespace arrays_and_strings

@@ -2,6 +2,9 @@
 
 #include <stack>
 
+namespace stacks_and_queues
+{
+
 /**
  * @brief Queue implemented with two stacks
 */
@@ -39,3 +42,5 @@ private:
     std::stack<int> push_stack;
     std::stack<int> pop_stack;
 };
+
+} // namespace stacks_and_queues

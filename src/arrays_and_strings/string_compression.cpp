@@ -2,6 +2,9 @@
 
 #include <list>
 
+namespace arrays_and_strings
+{
+
 // Approach 1: Iterate through string and append character with count
 // to new string
 
@@ -72,3 +75,5 @@ std::string stringCompression(const std::string& str)
 
     return new_str;
 }
+
+} // namespace arrays_and_strings

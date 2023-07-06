@@ -3,6 +3,9 @@
 #include "arrays_and_strings/arrays_and_strings.h"
 #include <iostream>
 
+namespace arrays_and_strings
+{
+
 bool isUnique_standard(const std::string& str)
 {
     bool found[128] = { false };
@@ -59,3 +62,5 @@ bool isUnique(const std::string& str, const std::string& method)
         return isUnique_inPlaceSort(str_ref);
     }
 }
+
+} // namespace arrays_and_strings

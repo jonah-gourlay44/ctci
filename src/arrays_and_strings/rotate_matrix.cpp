@@ -1,5 +1,8 @@
 #include "arrays_and_strings/arrays_and_strings.h"
 
+namespace arrays_and_strings
+{
+
 void rotateMatrix(uint32_t** mat, size_t N)
 {
     // Compute matrix transpose in-place
@@ -23,3 +26,5 @@ void rotateMatrix(uint32_t** mat, size_t N)
         col_r--;
     }
 }
+
+} // namespace arrays_and_strings

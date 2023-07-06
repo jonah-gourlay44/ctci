@@ -1,5 +1,8 @@
 #include <stacks_and_queues/stacks_and_queues.h>
 
+namespace stacks_and_queues
+{
+
 void sort(std::stack<int>& stack)
 {
     std::stack<int> peripheral;
@@ -32,3 +35,5 @@ void sort(std::stack<int>& stack)
         peripheral.pop();
     }
 }
+
+} // namespace stacks_and_queues

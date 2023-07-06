@@ -4,6 +4,9 @@
 #include <type_traits>
 #include <memory>
 
+namespace linked_lists
+{
+
 template <typename T>
 struct Node {
     using Ptr = std::shared_ptr<Node<T>>;
@@ -133,3 +136,5 @@ void LinkedList<T>::initialize()
 {
 
 }
+
+} // namepsace linked_lists

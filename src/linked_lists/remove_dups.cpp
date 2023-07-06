@@ -4,6 +4,9 @@
 #include <unordered_set>
 #include <unordered_map>
 
+namespace linked_lists
+{
+
 void removeDups(LinkedList<int>& list)
 {
     std::unordered_set<int> lookup;
@@ -25,3 +28,5 @@ void removeDups(LinkedList<int>& list)
         }
     }
 }
+
+} // namespace arrays_and_strings

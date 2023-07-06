@@ -1,5 +1,8 @@
 #include "arrays_and_strings/arrays_and_strings.h"
 
+namespace arrays_and_strings
+{
+
 bool oneAway(const std::string& str1, const std::string& str2)
 {
     // No edit case
@@ -53,3 +56,5 @@ bool oneAway(const std::string& str1, const std::string& str2)
 
     return edits <= 1;
 }
+
+} // namespace arrays_and_strings

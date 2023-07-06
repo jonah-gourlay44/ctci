@@ -1,6 +1,9 @@
 #include "linked_lists/linked_list.h"
 #include "linked_lists/linked_lists.h"
 
+namespace linked_lists
+{
+
 Node<int>::Ptr returnKthToLast(const LinkedList<int>& list, int k)
 {
     // First pointer
@@ -32,3 +35,5 @@ Node<int>::Ptr returnKthToLast(const LinkedList<int>& list, int k)
 
     return p2;
 }
+
+} // namespace arrays_and_strings

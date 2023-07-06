@@ -1,5 +1,8 @@
 #include "arrays_and_strings/arrays_and_strings.h"
 
+namespace arrays_and_strings
+{
+
 bool checkPermutation(const std::string& str1, const std::string& str2)
 {
     if (str1.length() != str2.length())
@@ -25,3 +28,5 @@ bool checkPermutation(const std::string& str1, const std::string& str2)
 
     return true;
 }
+
+} // namespace arrays_and_strings
