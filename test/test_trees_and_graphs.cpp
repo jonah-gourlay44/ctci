@@ -16,6 +16,7 @@ TEST(TreesAndGraphs, test_route_between_nodes)
 
     // Sanity check
     ASSERT_FALSE(routeBetweenNodes(graph.nodes[0], graph.nodes[2]));
+    ASSERT_TRUE(routeBetweenNodes(graph.nodes[0], graph.nodes[0]));
     
     graph.nodes[0]->children.push_back(graph.nodes[1]);
     graph.nodes[0]->children.push_back(graph.nodes[2]); 

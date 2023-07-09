@@ -1,46 +1,50 @@
 #include <trees_and_graphs/trees_and_graphs.h>
 #include <queue>
+#include <unordered_set>
 
 namespace trees_and_graphs
 {
 
 bool routeBetweenNodes(Node<int>::Ptr nodeA, Node<int>::Ptr nodeB)
 {
+    // Trivial case
+    if (nodeA == nodeB) { return true; }
+
+    // Search queues
     std::queue<Node<int>::WeakPtr> queueA;
     std::queue<Node<int>::WeakPtr> queueB;
 
-    for (const auto& node_ptr : nodeA->children) {
-        queueA.push(node_ptr);
-    }
+    // Track nodes that have been explored
+    std::unordered_set<Node<int>::Ptr> visited;
 
-    for (const auto& node_ptr : nodeB->children) {
-        queueB.push(node_ptr);
-    }
+    queueA.push(nodeA);
+    visited.insert(nodeA);
+    queueB.push(nodeB);
+    visited.insert(nodeB);
 
-    while (!queueA.empty() || !queueB.empty()) {
-        if (!queueA.empty()) {
-            if (queueA.front().lock() == nodeB) {
-                return true;
+    auto bfsStep = [&visited](std::queue<Node<int>::WeakPtr>& queue, Node<int>::Ptr find_node) {
+        if (!queue.empty()) {
+            auto visit = queue.front().lock();
+            queue.pop();
+
+            // Add children to search queue if unvisited
+            for (const auto& node_ptr : visit->children) {
+                if (visited.find(node_ptr.lock()) == visited.end()) {
+                    queue.push(node_ptr);
+                    visited.insert(node_ptr.lock());
+                } else if (node_ptr.lock() == find_node) {
+                    return true;
+                } 
             }
-            for (const auto& node_ptr : queueA.front().lock()->children) {
-                if (node_ptr.lock() != nodeA) {
-                    queueA.push(node_ptr);
-                }
-            }
-            queueA.pop();
         }
 
-        if (!queueB.empty()) {
-            if (queueB.front().lock() == nodeA) {
-                return true;
-            }
-            for (const auto& node_ptr : queueB.front().lock()->children) {
-                if (node_ptr.lock() != nodeB) {
-                    queueB.push(node_ptr);
-                }
-            }
-            queueB.pop();
-        }  
+        return false;
+    };
+
+    while (!queueA.empty() || !queueB.empty()) {
+        // Bi-directional bfs
+        if (bfsStep(queueA, nodeB)) { return true; }
+        if (bfsStep(queueB, nodeA)) { return true; }
     }
 
     return false;
